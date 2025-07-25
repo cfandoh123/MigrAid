@@ -100,7 +100,7 @@ MigrAid is an AI-powered, privacy-first resource navigator designed to help immi
 
 - **Project Lead**: [Your Name/Contact]
 - **Community**: [Link to Discord/Slack/Forum if available]
-- **License**: MIT (or your chosen license)
+- **License**: [MIT License](./LICENSE)
 
 ---
 
