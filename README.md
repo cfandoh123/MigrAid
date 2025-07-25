@@ -44,7 +44,7 @@ MigrAid is an AI-powered, privacy-first resource navigator designed to help immi
 ### Setup
 1. **Clone the repository:**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/cfandoh123/MigrAid.git
    cd MigrAid
    ```
 2. **Open in Android Studio**
