@@ -100,7 +100,6 @@ MigrAid is an AI-powered, privacy-first resource navigator designed to help immi
 
 - **Project Owners**: Calvin Andoh, Kofi Osei, Caleb Kwakye, Ebenezer Tseh
 - **Community**: Ghana Boys 
-- **License**: [License](./LICENSE)
 
 
 ---
