@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MigrAid</string>
+    <string name="onboarding_continue_english">Continuer en anglais</string>
+    <string name="onboarding_anonymous_mode">Mode anonyme</string>
+    <string name="onboarding_select_language">Choisir la langue</string>
+    <string name="onboarding_title">MigrAid</string>
+    <string name="home_title">Accueil</string>
+    <string name="find_clinics">Trouver des cliniques</string>
+    <string name="find_legal_aid">Aide juridique</string>
+    <string name="find_food_support">Trouver aide alimentaire</string>
+    <string name="find_shelter">Trouver un abri</string>
+    <string name="report_ice_activity">Signaler activite ICE</string>
+    <string name="resource_detail">Detail ressource</string>
+    <string name="advocate_dashboard">Tableau bord avocat</string>
+</resources> 
