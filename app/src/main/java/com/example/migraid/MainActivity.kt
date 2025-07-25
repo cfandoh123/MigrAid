@@ -22,6 +22,7 @@ import com.example.migraid.ui.ResourceDetailScreen
 import com.example.migraid.ui.ICEReportScreen
 import com.example.migraid.ui.AdvocateDashboardScreen
 import com.example.migraid.ui.ResourceCategoryScreen
+import com.example.migraid.ui.LoginScreen
 import com.example.migraid.utils.LocaleHelper
 
 class MainActivity : ComponentActivity() {
@@ -31,7 +32,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             val navController = rememberNavController()
             MigrAidTheme {
-                NavHost(navController = navController, startDestination = "onboarding") {
+                NavHost(navController = navController, startDestination = "login") {
+                    composable("login") { LoginScreen(navController) }
                     composable("onboarding") { OnboardingScreen(navController, ::updateLocale) }
                     composable("home") { HomeScreen(navController) }
                     composable("resourceCategory/{category}") { backStackEntry ->

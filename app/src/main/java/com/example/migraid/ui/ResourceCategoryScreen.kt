@@ -32,6 +32,11 @@ fun ResourceCategoryScreen(navController: NavController, category: String) {
                         ResourceType.LEGAL_AID -> stringResource(R.string.find_legal_aid)
                         ResourceType.FOOD_SUPPORT -> stringResource(R.string.find_food_support)
                         ResourceType.SHELTER -> stringResource(R.string.find_shelter)
+                        ResourceType.MENTAL_HEALTH -> "Find Mental Health Services"
+                        ResourceType.EMPLOYMENT -> "Find Employment Resources"
+                        ResourceType.EDUCATION -> "Find Education Resources"
+                        ResourceType.TRANSPORTATION -> "Find Transportation Help"
+                        else -> "Resources"
                     }
                 )
             },

@@ -80,6 +80,42 @@ fun HomeScreen(navController: NavController) {
                 onClick = { navController.navigate("resourceCategory/SHELTER") }
             )
         }
+        // Mental Health Category
+        item {
+            ResourceCategoryCard(
+                title = "Find Mental Health Services",
+                icon = Icons.Default.Favorite,
+                resourceCount = mockResources.count { it.type == ResourceType.MENTAL_HEALTH },
+                onClick = { navController.navigate("resourceCategory/MENTAL_HEALTH") }
+            )
+        }
+        // Employment Category
+        item {
+            ResourceCategoryCard(
+                title = "Find Employment Resources",
+                icon = Icons.Default.Work,
+                resourceCount = mockResources.count { it.type == ResourceType.EMPLOYMENT },
+                onClick = { navController.navigate("resourceCategory/EMPLOYMENT") }
+            )
+        }
+        // Education Category
+        item {
+            ResourceCategoryCard(
+                title = "Find Education Resources",
+                icon = Icons.Default.School,
+                resourceCount = mockResources.count { it.type == ResourceType.EDUCATION },
+                onClick = { navController.navigate("resourceCategory/EDUCATION") }
+            )
+        }
+        // Transportation Category
+        item {
+            ResourceCategoryCard(
+                title = "Find Transportation Help",
+                icon = Icons.Default.DirectionsBus,
+                resourceCount = mockResources.count { it.type == ResourceType.TRANSPORTATION },
+                onClick = { navController.navigate("resourceCategory/TRANSPORTATION") }
+            )
+        }
         
         item {
             Spacer(modifier = Modifier.height(24.dp))
@@ -107,22 +143,7 @@ fun HomeScreen(navController: NavController) {
             Spacer(modifier = Modifier.height(16.dp))
         }
         
-        // All Resources Section
-        item {
-            Text(
-                text = "All Resources",
-                style = MaterialTheme.typography.titleLarge,
-                modifier = Modifier.padding(bottom = 16.dp)
-            )
-        }
-        
-        // Display all resources
-        items(mockResources) { resource ->
-            ResourceCard(
-                resource = resource,
-                onClick = { navController.navigate("resourceDetail/${resource.id}") }
-            )
-        }
+        // Remove the 'All Resources' section and the items(mockResources) block
     }
 }
 

@@ -12,7 +12,7 @@ data class Resource(
 )
 
 enum class ResourceType {
-    CLINIC, LEGAL_AID, FOOD_SUPPORT, SHELTER
+    CLINIC, LEGAL_AID, FOOD_SUPPORT, SHELTER, MENTAL_HEALTH, EMPLOYMENT, EDUCATION, TRANSPORTATION
 }
 
 val mockResources = listOf(
@@ -112,5 +112,77 @@ val mockResources = listOf(
     Resource(id = "57", type = ResourceType.CLINIC, name = "Heather Clinic", description = "Open 6 days a week.", address = "3535 Heather St", phone = "555-1057", verified = true, distanceMiles = 3.1),
     Resource(id = "58", type = ResourceType.CLINIC, name = "Ivy Medical Center", description = "Affordable walk-in care.", address = "3636 Ivy Rd", phone = "555-1058", verified = false, distanceMiles = 1.4),
     Resource(id = "59", type = ResourceType.CLINIC, name = "Jasmine Clinic", description = "Serving the community.", address = "3737 Jasmine Ave", phone = "555-1059", verified = true, distanceMiles = 2.8),
-    Resource(id = "60", type = ResourceType.CLINIC, name = "Lilac Health Center", description = "General and pediatric care.", address = "3838 Lilac St", phone = "555-1060", verified = false, distanceMiles = 1.9)
+    Resource(id = "60", type = ResourceType.CLINIC, name = "Lilac Health Center", description = "General and pediatric care.", address = "3838 Lilac St", phone = "555-1060", verified = false, distanceMiles = 1.9),
+
+    Resource(id = "61", type = ResourceType.LEGAL_AID, name = "Justice Bridge Legal Aid", description = "Legal support for immigrants and refugees.", address = "100 Justice Ave", phone = "555-2001", verified = true, distanceMiles = 2.2),
+    Resource(id = "62", type = ResourceType.LEGAL_AID, name = "Liberty Law Center", description = "Pro bono legal services.", address = "200 Liberty St", phone = "555-2002", verified = false, distanceMiles = 1.5),
+    Resource(id = "63", type = ResourceType.LEGAL_AID, name = "Hope Legal Clinic", description = "Family and immigration law.", address = "300 Hope Rd", phone = "555-2003", verified = true, distanceMiles = 2.8),
+    Resource(id = "64", type = ResourceType.LEGAL_AID, name = "Unity Legal Services", description = "Legal aid for all.", address = "400 Unity Blvd", phone = "555-2004", verified = false, distanceMiles = 1.9),
+    Resource(id = "65", type = ResourceType.LEGAL_AID, name = "Advocate Law Group", description = "Community legal support.", address = "500 Advocate Ln", phone = "555-2005", verified = true, distanceMiles = 2.6),
+    Resource(id = "66", type = ResourceType.LEGAL_AID, name = "Empowerment Legal Aid", description = "Immigration and civil rights.", address = "600 Empowerment Ave", phone = "555-2006", verified = false, distanceMiles = 1.7),
+    Resource(id = "67", type = ResourceType.LEGAL_AID, name = "Pathways Legal Center", description = "Legal help for families.", address = "700 Pathways St", phone = "555-2007", verified = true, distanceMiles = 2.3),
+    Resource(id = "68", type = ResourceType.LEGAL_AID, name = "Bridgeway Law Clinic", description = "Pro bono legal advice.", address = "800 Bridgeway Rd", phone = "555-2008", verified = false, distanceMiles = 1.2),
+    Resource(id = "69", type = ResourceType.LEGAL_AID, name = "Safe Harbor Legal Aid", description = "Legal support for vulnerable groups.", address = "900 Safe Harbor Ave", phone = "555-2009", verified = true, distanceMiles = 2.5),
+    Resource(id = "70", type = ResourceType.LEGAL_AID, name = "New Beginnings Law Center", description = "Immigration and asylum law.", address = "1010 New Beginnings Blvd", phone = "555-2010", verified = false, distanceMiles = 1.8),
+    Resource(id = "71", type = ResourceType.LEGAL_AID, name = "Freedom Legal Services", description = "Legal help for all ages.", address = "1111 Freedom St", phone = "555-2011", verified = true, distanceMiles = 2.1),
+    Resource(id = "72", type = ResourceType.LEGAL_AID, name = "Community Justice Center", description = "Community-based legal aid.", address = "1212 Community Ave", phone = "555-2012", verified = false, distanceMiles = 1.6),
+    Resource(id = "73", type = ResourceType.LEGAL_AID, name = "Allies Law Group", description = "Legal support for families.", address = "1313 Allies Rd", phone = "555-2013", verified = true, distanceMiles = 2.7),
+    Resource(id = "74", type = ResourceType.LEGAL_AID, name = "Open Doors Legal Aid", description = "Pro bono legal services.", address = "1414 Open Doors Ln", phone = "555-2014", verified = false, distanceMiles = 1.3),
+    Resource(id = "75", type = ResourceType.LEGAL_AID, name = "Harborview Law Center", description = "Legal help for immigrants.", address = "1515 Harborview Ave", phone = "555-2015", verified = true, distanceMiles = 2.4),
+
+    Resource(id = "76", type = ResourceType.FOOD_SUPPORT, name = "Harvest Food Pantry", description = "Weekly food distribution for families.", address = "200 Harvest Rd", phone = "555-3001", verified = true, distanceMiles = 1.2),
+    Resource(id = "77", type = ResourceType.FOOD_SUPPORT, name = "Sunshine Meals Center", description = "Free hot meals served daily.", address = "300 Sunshine Ave", phone = "555-3002", verified = false, distanceMiles = 2.3),
+    Resource(id = "78", type = ResourceType.FOOD_SUPPORT, name = "Unity Food Bank", description = "Groceries for those in need.", address = "400 Unity Blvd", phone = "555-3003", verified = true, distanceMiles = 1.7),
+    Resource(id = "79", type = ResourceType.FOOD_SUPPORT, name = "Hope Kitchen", description = "Community kitchen and pantry.", address = "500 Hope St", phone = "555-3004", verified = false, distanceMiles = 2.8),
+    Resource(id = "80", type = ResourceType.FOOD_SUPPORT, name = "Bridge Food Support", description = "Food support for all ages.", address = "600 Bridge Ave", phone = "555-3005", verified = true, distanceMiles = 1.5),
+    Resource(id = "81", type = ResourceType.FOOD_SUPPORT, name = "Open Table Pantry", description = "Weekly groceries and meals.", address = "700 Open Table Rd", phone = "555-3006", verified = false, distanceMiles = 2.1),
+    Resource(id = "82", type = ResourceType.FOOD_SUPPORT, name = "Fresh Start Food Center", description = "Healthy food for families.", address = "800 Fresh Start Ave", phone = "555-3007", verified = true, distanceMiles = 1.9),
+    Resource(id = "83", type = ResourceType.FOOD_SUPPORT, name = "Safe Haven Meals", description = "Free meals and groceries.", address = "900 Safe Haven St", phone = "555-3008", verified = false, distanceMiles = 2.6),
+    Resource(id = "84", type = ResourceType.FOOD_SUPPORT, name = "New Leaf Food Bank", description = "Groceries for low-income families.", address = "1010 New Leaf Blvd", phone = "555-3009", verified = true, distanceMiles = 1.4),
+    Resource(id = "85", type = ResourceType.FOOD_SUPPORT, name = "Community Table", description = "Hot meals and groceries.", address = "1111 Community Ave", phone = "555-3010", verified = false, distanceMiles = 2.7),
+    Resource(id = "86", type = ResourceType.FOOD_SUPPORT, name = "Family Food Center", description = "Food support for families.", address = "1212 Family Rd", phone = "555-3011", verified = true, distanceMiles = 1.8),
+    Resource(id = "87", type = ResourceType.FOOD_SUPPORT, name = "Harvest Hope Pantry", description = "Weekly food distribution.", address = "1313 Harvest Hope St", phone = "555-3012", verified = false, distanceMiles = 2.2),
+    Resource(id = "88", type = ResourceType.FOOD_SUPPORT, name = "Open Arms Food Bank", description = "Groceries and meals for all.", address = "1414 Open Arms Ave", phone = "555-3013", verified = true, distanceMiles = 1.6),
+    Resource(id = "89", type = ResourceType.FOOD_SUPPORT, name = "Sunrise Meals Center", description = "Free meals daily.", address = "1515 Sunrise Blvd", phone = "555-3014", verified = false, distanceMiles = 2.5),
+    Resource(id = "90", type = ResourceType.FOOD_SUPPORT, name = "Bridgeway Food Support", description = "Food support for the community.", address = "1616 Bridgeway Rd", phone = "555-3015", verified = true, distanceMiles = 1.3),
+
+    Resource(id = "91", type = ResourceType.SHELTER, name = "Safe Nights Shelter", description = "Emergency overnight shelter.", address = "300 Safe Nights Ave", phone = "555-4001", verified = true, distanceMiles = 2.4),
+    Resource(id = "92", type = ResourceType.SHELTER, name = "Harbor House Shelter", description = "Temporary housing for families.", address = "400 Harbor House Rd", phone = "555-4002", verified = false, distanceMiles = 1.7),
+    Resource(id = "93", type = ResourceType.SHELTER, name = "New Beginnings Shelter", description = "Supportive housing and meals.", address = "500 New Beginnings Blvd", phone = "555-4003", verified = true, distanceMiles = 2.9),
+    Resource(id = "94", type = ResourceType.SHELTER, name = "Unity Shelter", description = "Shelter for individuals and families.", address = "600 Unity St", phone = "555-4004", verified = false, distanceMiles = 1.2),
+    Resource(id = "95", type = ResourceType.SHELTER, name = "Hope House Shelter", description = "Emergency and transitional housing.", address = "700 Hope Ave", phone = "555-4005", verified = true, distanceMiles = 2.6),
+    Resource(id = "96", type = ResourceType.SHELTER, name = "Bridge Shelter", description = "Temporary shelter and meals.", address = "800 Bridge Rd", phone = "555-4006", verified = false, distanceMiles = 1.9),
+    Resource(id = "97", type = ResourceType.SHELTER, name = "Open Doors Shelter", description = "Shelter for all ages.", address = "900 Open Doors Ave", phone = "555-4007", verified = true, distanceMiles = 2.1),
+    Resource(id = "98", type = ResourceType.SHELTER, name = "Sunrise Shelter", description = "Emergency overnight shelter.", address = "1010 Sunrise Blvd", phone = "555-4008", verified = false, distanceMiles = 1.5),
+    Resource(id = "99", type = ResourceType.SHELTER, name = "Family Haven Shelter", description = "Shelter for families and children.", address = "1111 Family Haven St", phone = "555-4009", verified = true, distanceMiles = 2.8),
+    Resource(id = "100", type = ResourceType.SHELTER, name = "Community Shelter", description = "Supportive housing and meals.", address = "1212 Community Ave", phone = "555-4010", verified = false, distanceMiles = 1.6),
+    Resource(id = "101", type = ResourceType.SHELTER, name = "Harborview Shelter", description = "Temporary housing for all.", address = "1313 Harborview Rd", phone = "555-4011", verified = true, distanceMiles = 2.3),
+    Resource(id = "102", type = ResourceType.SHELTER, name = "Pathways Shelter", description = "Shelter and meals for individuals.", address = "1414 Pathways Ave", phone = "555-4012", verified = false, distanceMiles = 1.8),
+    Resource(id = "103", type = ResourceType.SHELTER, name = "Freedom House Shelter", description = "Emergency and transitional housing.", address = "1515 Freedom Blvd", phone = "555-4013", verified = true, distanceMiles = 2.7),
+    Resource(id = "104", type = ResourceType.SHELTER, name = "Allies Shelter", description = "Shelter for all ages.", address = "1616 Allies Rd", phone = "555-4014", verified = false, distanceMiles = 1.3),
+    Resource(id = "105", type = ResourceType.SHELTER, name = "Open Arms Shelter", description = "Supportive housing and meals.", address = "1717 Open Arms Ave", phone = "555-4015", verified = true, distanceMiles = 2.5),
+
+    Resource(id = "106", type = ResourceType.MENTAL_HEALTH, name = "Mindful Support Center", description = "Counseling and mental health services.", address = "200 Mindful Ave", phone = "555-5001", verified = true, distanceMiles = 1.5),
+    Resource(id = "107", type = ResourceType.MENTAL_HEALTH, name = "Peaceful Minds Clinic", description = "Therapy and support groups.", address = "300 Peaceful Rd", phone = "555-5002", verified = false, distanceMiles = 2.2),
+    Resource(id = "108", type = ResourceType.MENTAL_HEALTH, name = "Hope Mental Wellness", description = "Mental health for all ages.", address = "400 Hope Wellness St", phone = "555-5003", verified = true, distanceMiles = 1.8),
+    Resource(id = "109", type = ResourceType.MENTAL_HEALTH, name = "Unity Counseling Center", description = "Community counseling services.", address = "500 Unity Counseling Ave", phone = "555-5004", verified = false, distanceMiles = 2.6),
+    Resource(id = "110", type = ResourceType.MENTAL_HEALTH, name = "Bridgeway Therapy Center", description = "Therapy and mental health support.", address = "600 Bridgeway Therapy Rd", phone = "555-5005", verified = true, distanceMiles = 1.9),
+
+    Resource(id = "111", type = ResourceType.EMPLOYMENT, name = "Job Connect Center", description = "Employment resources and job search help.", address = "200 Job Connect Ave", phone = "555-6001", verified = true, distanceMiles = 2.3),
+    Resource(id = "112", type = ResourceType.EMPLOYMENT, name = "Workforce Solutions", description = "Career counseling and job fairs.", address = "300 Workforce Rd", phone = "555-6002", verified = false, distanceMiles = 1.7),
+    Resource(id = "113", type = ResourceType.EMPLOYMENT, name = "Opportunity Hub", description = "Job training and placement.", address = "400 Opportunity St", phone = "555-6003", verified = true, distanceMiles = 2.8),
+    Resource(id = "114", type = ResourceType.EMPLOYMENT, name = "Career Pathways Center", description = "Resume help and job search.", address = "500 Career Pathways Ave", phone = "555-6004", verified = false, distanceMiles = 1.4),
+    Resource(id = "115", type = ResourceType.EMPLOYMENT, name = "Next Step Employment", description = "Employment support for all.", address = "600 Next Step Rd", phone = "555-6005", verified = true, distanceMiles = 2.1),
+
+    Resource(id = "116", type = ResourceType.EDUCATION, name = "Learning Bridge Center", description = "Adult education and ESL classes.", address = "200 Learning Bridge Ave", phone = "555-7001", verified = true, distanceMiles = 1.6),
+    Resource(id = "117", type = ResourceType.EDUCATION, name = "Community Learning Hub", description = "Tutoring and after-school programs.", address = "300 Community Learning Rd", phone = "555-7002", verified = false, distanceMiles = 2.5),
+    Resource(id = "118", type = ResourceType.EDUCATION, name = "Pathways Education Center", description = "GED and literacy classes.", address = "400 Pathways Education St", phone = "555-7003", verified = true, distanceMiles = 1.9),
+    Resource(id = "119", type = ResourceType.EDUCATION, name = "Open Doors Learning Center", description = "Education for all ages.", address = "500 Open Doors Learning Ave", phone = "555-7004", verified = false, distanceMiles = 2.7),
+    Resource(id = "120", type = ResourceType.EDUCATION, name = "Hope Academy", description = "K-12 and adult education.", address = "600 Hope Academy Rd", phone = "555-7005", verified = true, distanceMiles = 1.3),
+
+    Resource(id = "121", type = ResourceType.TRANSPORTATION, name = "Community Transit Center", description = "Bus passes and transit info.", address = "200 Transit Ave", phone = "555-8001", verified = true, distanceMiles = 2.2),
+    Resource(id = "122", type = ResourceType.TRANSPORTATION, name = "Ride Assistance Program", description = "Free and discounted rides.", address = "300 Ride Assistance Rd", phone = "555-8002", verified = false, distanceMiles = 1.8),
+    Resource(id = "123", type = ResourceType.TRANSPORTATION, name = "Safe Rides Center", description = "Transportation for families.", address = "400 Safe Rides St", phone = "555-8003", verified = true, distanceMiles = 2.6),
+    Resource(id = "124", type = ResourceType.TRANSPORTATION, name = "Mobility Support Hub", description = "Transit help for seniors and disabled.", address = "500 Mobility Support Ave", phone = "555-8004", verified = false, distanceMiles = 1.5),
+    Resource(id = "125", type = ResourceType.TRANSPORTATION, name = "Pathways Transit Center", description = "Bus and train info.", address = "600 Pathways Transit Rd", phone = "555-8005", verified = true, distanceMiles = 2.9)
 ) 
