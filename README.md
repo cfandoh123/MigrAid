@@ -44,7 +44,7 @@ MigrAid is an AI-powered, privacy-first resource navigator designed to help immi
 ### Setup
 1. **Clone the repository:**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/cfandoh123/MigrAid.git
    cd MigrAid
    ```
 2. **Open in Android Studio**
@@ -98,9 +98,15 @@ MigrAid is an AI-powered, privacy-first resource navigator designed to help immi
 
 ## 📣 Contact & Community
 
+<<<<<<< HEAD
 - **Project Lead**: [Your Name/Contact]
 - **Community**: [Link to Discord/Slack/Forum if available]
 - **License**: [MIT License](./LICENSE)
+=======
+- **Project Owners**: Calvin Andoh, Kofi Osei, Caleb Kwakye, Ebenezer Tseh
+- **Community**: Ghana Boys 
+- **License**: MIT 
+>>>>>>> 6089c9bada58be10bbd1dfb3a1140482dad01d28
 
 ---
 
