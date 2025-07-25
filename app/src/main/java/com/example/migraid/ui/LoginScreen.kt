@@ -3,12 +3,14 @@ package com.example.migraid.ui
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Email
-import androidx.compose.material.icons.filled.Google
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.TextFieldValue
+import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
@@ -59,7 +61,7 @@ fun LoginScreen(navController: NavController) {
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(16.dp)
         ) {
-            Icon(Icons.Default.Google, contentDescription = null, modifier = Modifier.padding(end = 8.dp))
+            Icon(Icons.Default.Person, contentDescription = null, modifier = Modifier.padding(end = 8.dp))
             Text("Sign up with Google", style = MaterialTheme.typography.titleLarge)
         }
     }
