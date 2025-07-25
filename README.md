@@ -98,9 +98,9 @@ MigrAid is an AI-powered, privacy-first resource navigator designed to help immi
 
 ## 📣 Contact & Community
 
-- **Project Lead**: [Your Name/Contact]
-- **Community**: [Link to Discord/Slack/Forum if available]
-- **License**: MIT (or your chosen license)
+- **Project Owners**: Calvin Andoh, Kofi Osei, Caleb Kwakye, Ebenezer Tseh
+- **Community**: Ghana Boys 
+- **License**: MIT 
 
 ---
 
