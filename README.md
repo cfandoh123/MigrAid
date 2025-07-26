@@ -1,4 +1,4 @@
-# MigrAid - Advanced Mobile App for Immigrant Support
+# MigrAid - Mobile App for Immigrant Support
 
 ## 🚀 **Enhanced Features Overview**
 
