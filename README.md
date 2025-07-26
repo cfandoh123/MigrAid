@@ -194,8 +194,8 @@ MigrAid is now a comprehensive, production-ready mobile application with advance
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/migraid/migraid-ios.git
-   cd migraid-ios
+   git clone https://github.com/cfandoh123/MigrAid.git
+   cd MigrAid
    ```
 
 2. **Install Dependencies**
