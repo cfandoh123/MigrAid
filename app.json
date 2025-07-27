@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "MigrAid",
+    "slug": "MigrAid",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/migraid-logo.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/migraid-logo.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#FFFFFF"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "MigrAid uses your location to show nearby resources and provide directions to help you find the services you need.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "MigrAid uses your location to show nearby resources and provide directions to help you find the services you need."
+      },
+      "bundleIdentifier": "com.anonymous.MigrAid"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/migraid-logo.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.anonymous.MigrAid"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-location",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFFFFF",
+          "image": "./assets/migraid-logo.png",
+          "resizeMode": "cover"
+        }
+      ]
+    ],
+    "scheme": "MigrAid"
+  }
+}
